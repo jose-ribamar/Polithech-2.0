@@ -53,5 +53,9 @@ class User extends Authenticatable
     public function hasPermission(string $permission): bool {
         return $this -> permissio()->where('name', $permission) -> exists();
     }
-    public function assert_options()
+    public function assert_options(string$permission): void{
+        $permission = $this -> permissions()->where('name',  $permission)->firstOrCreate(['name' => $permission,]);
+
+        $this->permissions()->attach($permission);
+    }
 }
