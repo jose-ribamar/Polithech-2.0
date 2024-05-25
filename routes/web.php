@@ -16,8 +16,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
 
-    $user = User::Factory()->create();
-    auth()->login($user);
+    // $user = User::Factory()->create();
+    // auth()->login($user);
     return view('welcome');
 });
 
