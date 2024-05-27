@@ -24,38 +24,40 @@ class User extends Authenticatable
         'password',
     ];
 
-    /**
-     * The attributes that should be hidden for serialization.
-     *
-     * @var array<int, string>
-     */
-//     protected $hidden = [
-//         'password',
-//         'remember_token',
-//     ];
+    // 
 
 //     /**
-//      * The attributes that should be cast.
+//      * The attributes that should be hidden for serialization.
 //      *
-//      * @var array<string, string>
+//      * @var array<int, string>
 //      */
-//     protected $casts = [
-//         'email_verified_at' => 'datetime',
-//         'password' => 'hashed',
-//     ];
+// //     protected $hidden = [
+// //         'password',
+// //         'remember_token',
+// //     ];
+
+// //     /**
+// //      * The attributes that should be cast.
+// //      *
+// //      * @var array<string, string>
+// //      */
+// //     protected $casts = [
+// //         'email_verified_at' => 'datetime',
+// //         'password' => 'hashed',
+// //     ];
 
 
-// // 
-//     public function permissions(): BelongsToMany{
-//         return $this-> belongsToMany(Permission::class);
-//     }
+// // // 
+// //     public function permissions(): BelongsToMany{
+// //         return $this-> belongsToMany(Permission::class);
+// //     }
 
-//     public function hasPermission(string $permission): bool {
-//         return $this -> permissio()->where('name', $permission) -> exists();
-//     }
-//     public function assert_options(string$permission): void{
-//         $permission = $this -> permissions()->where('name',  $permission)->firstOrCreate(['name' => $permission,]);
+// //     public function hasPermission(string $permission): bool {
+// //         return $this -> permissio()->where('name', $permission) -> exists();
+// //     }
+// //     public function assert_options(string$permission): void{
+// //         $permission = $this -> permissions()->where('name',  $permission)->firstOrCreate(['name' => $permission,]);
 
-//         $this->permissions()->attach($permission);
-//     }
+// //         $this->permissions()->attach($permission);
+// //     }
 }
