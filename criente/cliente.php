@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 // URL do servidor
 $server_url = 'http://exemplo.com/api';
 
@@ -34,4 +34,4 @@ curl_close($ch);
 
 // Exibe a resposta do servidor
 echo $response;
-?>
+?> -->
