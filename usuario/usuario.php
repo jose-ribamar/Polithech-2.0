@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 // Verifica se o formulário foi submetido
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Verifica se os campos obrigatórios foram preenchidos
@@ -42,4 +42,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <input type="submit" value="Registrar">
     </form>
 </body>
-</html>
+</html> -->
