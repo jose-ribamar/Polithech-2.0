@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use  App\Http\Controllers\ProdutoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,26 +15,30 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/', [ProdutoController::class, 'index'])->name('produto.index');
 
-    // $user = User::Factory()->create();
-    // auth()->login($user);
-    return redirect()->route('admin.cliente');
-});
+Route::get('/produto/{id?}', [ProdutoController::class, 'show'])->name('produto.show');
 
-Route::name('admin.')->group(function(){
-    Route::get('admin/dashboard', function(){
-    return "dashboard";
-    })->name('dashboard');
+// Route::group([
+//     'prefix'=>'admin', 
+//     'as'=> 'admin.'
+// ], function(){
 
-    Route::get('admin/user', function(){
-        return "user";
-    })->name('user');
+// // Route::name('admin.')->group(function(){
 
-    Route::get('admin/cliente', function(){
-        return "cliente";
-    })->name('cliente');
-});
+
+//     Route::get('admin/dashboard', function(){
+//     return "dashboard";
+//     })->name('dashboard');
+
+//     Route::get('admin/user', function(){
+//         return "user";
+//     })->name('user');
+
+//     Route::get('admin/cliente', function(){
+//         return "cliente";
+//     })->name('cliente');
+// });
 
 
 
