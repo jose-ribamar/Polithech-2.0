@@ -17,28 +17,28 @@ use  App\Http\Controllers\ProdutoController;
 
 Route::get('/', [ProdutoController::class, 'index'])->name('produto.index');
 
-Route::get('/produto/{id?}', [ProdutoController::class, 'show'])->name('produto.show');
+// Route::get('/produto/{id?}', [ProdutoController::class, 'show'])->name('produto.show');
 
-// Route::group([
-//     'prefix'=>'admin', 
-//     'as'=> 'admin.'
-// ], function(){
+Route::group([
+    'prefix'=>'admin', 
+    'as'=> 'admin.'
+], function(){
 
-// // Route::name('admin.')->group(function(){
+// Route::name('admin.')->group(function(){
 
 
-//     Route::get('admin/dashboard', function(){
-//     return "dashboard";
-//     })->name('dashboard');
+    Route::get('admin/dashboard', function(){
+    return "dashboard";
+    })->name('dashboard');
 
-//     Route::get('admin/user', function(){
-//         return "user";
-//     })->name('user');
+    Route::get('admin/user', function(){
+        return "user";
+    })->name('user');
 
-//     Route::get('admin/cliente', function(){
-//         return "cliente";
-//     })->name('cliente');
-// });
+    Route::get('admin/cliente', function(){
+        return "cliente";
+    })->name('cliente');
+});
 
 
 
