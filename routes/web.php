@@ -27,9 +27,9 @@ use  App\Http\Controllers\ProdutoController;
 // // Route::name('admin.')->group(function(){
 
 
-//     Route::get('admin/dashboard', function(){
-//     return "dashboard";
-//     })->name('dashboard');
+    Route::get('admin/dashboard', function(){
+    return "dashboard";
+    })->name('dashboard');
 
 //     Route::get('admin/user', function(){
 //         return "user";
@@ -40,7 +40,7 @@ use  App\Http\Controllers\ProdutoController;
 //     })->name('cliente');
 // });
 
-Route::resource('produtos', ProdutoController::class);
+// Route::resource('produtos', ProdutoController::class);
 
 
 
@@ -57,11 +57,11 @@ Route::resource('produtos', ProdutoController::class);
 
 // Route::redirect('/sobre', 'empresa');
 
-// Route::view('/empresa','site/empresa');
+Route::view('/produto','site/empresa');
 
-// Route::get('/news',function(){
-//     return view('news');
-// })->name('noticias');
+Route::get('/produto',function(){
+    return view('produto');
+});
 
 // Route::get('/novidades', function(){
 //     return redirect()->route('noticias');
