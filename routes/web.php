@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ProdutoController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +17,43 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/', [ProdutoController::class, 'index']);
+
+// Route::get('/', function(){
+//     return redirect()->route('admin.clientes');
+// });
+
+// --------------------------------------------------------------
+
+// Route::get('/sobre', function(){
+//     return redirect('/empresa');
+// } );
+
+// Route::get('/empresa', function(){
+//     return view('/empresa');
+// } );
+
+// Route::prefix('admin')->group(function(){
+
+// Route::get('dashboard', function(){
+//     return "dashboard";
+// });
+
+//     Route::get('cliente', function(){
+//         return "cliente";
+//     });
+
+// }
+
+// );
+// // ---------------------------------------------
+// Route::redirect('/ola' , '/empresa');
+
+// Route::get('/new', function(){
+//     return view('/new');
+// })->name('new');
+
+// Route::get('/empresa', function(){
+//     return redirect('/new');
+// });
