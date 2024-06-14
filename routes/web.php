@@ -18,7 +18,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/', [ProdutoController::class, 'index']);
+Route::get('/produtos', [ProdutoController::class, 'index']);
 
 // Route::get('/', function(){
 //     return redirect()->route('admin.clientes');
@@ -50,10 +50,10 @@ Route::get('/', [ProdutoController::class, 'index']);
 // // ---------------------------------------------
 // Route::redirect('/ola' , '/empresa');
 
-// Route::get('/new', function(){
-//     return view('/new');
-// })->name('new');
+Route::get('/new', function(){
+    return view('/new');
+})->name('new');
 
-// Route::get('/empresa', function(){
-//     return redirect('/new');
-// });
+Route::get('/empresa', function(){
+    return redirect('/new');
+});
