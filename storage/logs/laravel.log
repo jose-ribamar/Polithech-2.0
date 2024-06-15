@@ -1023,6 +1023,7 @@ Did you mean one of these?
 #3 C:\\laragon\\www\\politech\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Builder.php(602): Illuminate\\Database\\Schema\\Blueprint->build(Object(Illuminate\\Database\\MySqlConnection), Object(Illuminate\\Database\\Schema\\Grammars\\MySqlGrammar))
 #4 C:\\laragon\\www\\politech\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Builder.php(460): Illuminate\\Database\\Schema\\Builder->build(Object(Illuminate\\Database\\Schema\\Blueprint))
 #5 C:\\laragon\\www\\politech\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(355): Illuminate\\Database\\Schema\\Builder->create('produto', Object(Closure))
+#6 C:\\laragon\\www\\politech\\database\\migrations\\2024_06_14_022148_create_produto_table.php(29): Illuminate\\Support\\Facades\\Facade::__callStatic('create', Array)
 #7 C:\\laragon\\www\\politech\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(493): Illuminate\\Database\\Migrations\\Migration@anonymous->up()
 #8 C:\\laragon\\www\\politech\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(410): Illuminate\\Database\\Migrations\\Migrator->runMethod(Object(Illuminate\\Database\\MySqlConnection), Object(Illuminate\\Database\\Migrations\\Migration@anonymous), 'up')
 #9 C:\\laragon\\www\\politech\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(419): Illuminate\\Database\\Migrations\\Migrator->Illuminate\\Database\\Migrations\\{closure}()
