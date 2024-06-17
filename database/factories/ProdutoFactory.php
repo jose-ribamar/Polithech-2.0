@@ -27,7 +27,7 @@ class ProdutoFactory extends Factory
             'slug' => Str::slug($nome),
             'imagem' => $this->faker->imageUrl(400),
             'id_user' => User::pluck('id')->random(),
-            'id_categorias' => Categoria::pluck('id')->random(),
+            'id_categoria' => Categoria::pluck('id')->random(),
         ];
     }
 }
