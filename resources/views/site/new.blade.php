@@ -6,6 +6,6 @@
     <title>Document</title>
 </head>
 <body>
-   <h1>Noticias</h1>
+   <h1>Meu nome é {{$nome}}, e tenho {{$idade}} anos</h1>
 </body>
 </html>
