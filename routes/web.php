@@ -20,6 +20,7 @@ Route::get('/', function () {
 
 Route::get('/produtos', [ProdutoController::class, 'index']);
 
+
 // Route::get('/', function(){
 //     return redirect()->route('admin.clientes');
 // });
