@@ -14,7 +14,8 @@ class ProdutoController extends Controller
 
         $nome = "Ribamar";
         $idade = 22;
-        return view('site/home', compact('nome', 'idade'));
+        $frutas = ['banana', 'laranja', 'maçã'];
+        return view('site/home', compact('nome', 'idade', 'frutas'));
     // $produto = Produto::all();
     // return dd($produto);
     }
