@@ -12,6 +12,7 @@
     <div class="col s12 m6">
         <h1>{{$produto->nome}}</h1>
         <p>Postato por {{$produto->descricao}}</p> 
+        <p>Preço {{ number_format($produto->preco, 2, ',', '.')}} R$</p> 
         <p>Postato por: {{$produto->user->firstName}}</p>  
         <p>Categoria: {{$produto->categoria->nome}}</p>  
         <button class="btn orange btn-la"> Comprar</button>

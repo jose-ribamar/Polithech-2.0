@@ -7,6 +7,11 @@ use Illuminate\Http\Request;
 
 class CategoriaController extends Controller
 {
+
+
+    // public function CarrinhoLista(){
+
+    // }
     /**
      * Display a listing of the resource.
      */
