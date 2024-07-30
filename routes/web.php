@@ -24,8 +24,8 @@ Route::get('/produtos', [ProdutoController::class, 'index']);
 Route::get('/', [SiteController::class, 'index'])->name('site.index');
 Route::get('/produto{slug}', [SiteController::class, 'details'])->name('site.details');
 Route::get('/categoria/{id}', [SiteController::class, 'categoria'])->name('site.categoria');
-Route::get('/carrinho', [CarrinhoController::class, 'CarrinhoLista'])->name('site.carrinho');
-// Route::get('/categoria/{id}', [SiteController::class, 'categoria'])->name('site.categoria');
+Route::get('/carrinho', [CarrinhoController::class, 'carrinholista'])->name('site.carrinho');
+Route::post('/carrinho', [CarrinhoController::class, 'adicionacarrinho'])->name('site.addcarrinho');
 
 
 
