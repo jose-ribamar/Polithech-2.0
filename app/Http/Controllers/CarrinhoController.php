@@ -9,7 +9,7 @@ class CarrinhoController extends Controller
 
     public function CarrinhoLista(){
         $itens = \Cart::getContent();
-        dd($itens);
+        return view('site.carrinho', compact('itens'));
 }
 
 public function adicionaCarrinho(Request $request){
@@ -22,5 +22,12 @@ public function adicionaCarrinho(Request $request){
             'image' => $request->img
         )
         ]);
+    
+    return redirect()->route('site.carrinho')->with('Sucesso', 'Produto adicionado no carrinho com sucesso');
+}
+
+public function removeCarrinho(Request $request){
+    \Cart::remove($request->id);
+    return redirect()->route('site.carrinho')->with('Sucesso', 'Produto removido com sucesso');
 }
 }
